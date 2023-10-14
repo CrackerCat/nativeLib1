@@ -5,9 +5,13 @@
 #ifndef HUNTER_RAW_SYSCALL_H
 #define HUNTER_RAW_SYSCALL_H
 
-#include "Foundation/syscall/tracer/syscall.h"
+
 
 #define INLINE __always_inline
+
+#include <asm/unistd.h>
+#include <sys/syscall.h>
+
 extern "C" {
 INLINE  extern inline long raw_syscall(long __number, ...);
 }

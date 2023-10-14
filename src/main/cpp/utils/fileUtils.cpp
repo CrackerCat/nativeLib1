@@ -9,7 +9,24 @@
 
 using namespace std;
 
-
+/**
+ * 获取文件夹下全部的文件
+ */
+bool fileUtils::getFiles(const std::string& path, std::vector<std::string>& files){
+    DIR *pdr = opendir(path.c_str());
+    if (pdr == nullptr) {
+        LOG(ERROR) << "getFiles  open  fail "<<path<<" "<<strerror(errno);
+        return false;
+    }
+    dirent *read_ptr;
+    //在app启动之前检测当前app所有的进程,判断是否存在和main不一样的进程
+    while ((read_ptr = readdir(pdr)) != nullptr) {
+        //LOG(ERROR) << "getFiles  emplace_back "<<read_ptr->d_name;
+        files.emplace_back(read_ptr->d_name);
+    }
+    closedir(pdr);
+    return true;
+}
 bool fileUtils::setFilePermissions(const std::string& filePath, std::filesystem::perms permissions) {
     // 检查文件是否存在
     if (!std::filesystem::exists(filePath)) {

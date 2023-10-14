@@ -23,6 +23,8 @@
 #define ANDROID_R 30
 //Android 12.0
 #define ANDROID_S 31
-
-
+//https://developer.android.com/studio/releases/platforms
+#define ANDROID_SL 32
+//android 13
+#define ANDROID_T 33
 #endif //QCONTAINER_PRO_VERSION_H

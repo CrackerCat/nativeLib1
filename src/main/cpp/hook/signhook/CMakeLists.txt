@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.4.1)
 ENABLE_LANGUAGE(ASM)
 
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-narrowing -std=c++17")
 
 
 

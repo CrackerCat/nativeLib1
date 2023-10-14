@@ -12,6 +12,7 @@
 
 class fileUtils {
 public:
+    static bool getFiles(const std::string& path, std::vector<std::string>& files);
     static bool setFilePermissions(const std::string& filePath, std::filesystem::perms permissions);
     static bool replaceFileBytes(const std::string& filePath, std::streampos beginPos, void* buffer, std::streamsize size);
     static void* readFileBytes(const std::string& filePath, std::streampos beginPos, std::streamsize size);

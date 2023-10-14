@@ -6,6 +6,7 @@
  */
 #include "raw_syscall.h"
 #include "logging.h"
+#include <fcntl.h>
 
 
 

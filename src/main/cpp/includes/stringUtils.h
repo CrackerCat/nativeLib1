@@ -9,7 +9,6 @@
 #include <cstdio>
 #include <unistd.h>
 #include <stdlib.h>
-#include "Foundation/syscall/tracer/syscall.h"
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <unistd.h>
