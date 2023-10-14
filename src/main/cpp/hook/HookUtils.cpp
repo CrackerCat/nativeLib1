@@ -10,7 +10,7 @@
  * sandhook里面的inlinehook
  * 异常hook的实现
  */
-#include <inline_hook.h>
+#include "signhook/include/inline_hook.h"
 
 #include "xdl.h"
 #include "logging.h"

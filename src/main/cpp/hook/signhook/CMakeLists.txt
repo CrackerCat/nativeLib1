@@ -10,9 +10,9 @@ add_subdirectory(exts/distorm)
 add_subdirectory(exts/ucontext)
 
 include_directories(
-        ${HomePath}/nativeLib/src/main/cpp/
-        ${HomePath}/nativeLib/src/main/cpp/includes/
-        ${HomePath}/nativeLib/src/main/cpp/hook/signhook/include/
+        ${HomePath}/external/lsplant/src/main/cpp/include/
+         ${HomePath}/external/nativeLib/src/main/cpp/includes/
+        ${HomePath}/external/lsplant/src/main/cpp/include/hook/signhook/include/
 )
 
 include_directories(

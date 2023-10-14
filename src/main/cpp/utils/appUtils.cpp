@@ -6,9 +6,9 @@
 
 #include <utility>
 
-#include "includes/appUtils.h"
-#include "includes/HookUtils.h"
-#include "includes/libpath.h"
+#include "appUtils.h"
+#include "HookUtils.h"
+#include "libpath.h"
 
 using namespace StringUtils;
 using namespace ZhenxiRunTime;

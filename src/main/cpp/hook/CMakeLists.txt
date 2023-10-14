@@ -36,11 +36,11 @@ add_subdirectory(Dobby dobby.build)
 
 
 include_directories(
-        ${HomePath}/nativeLib/src/main/cpp/
-        ${HomePath}/nativeLib/src/main/cpp/includes/
+        ${HomePath}/external/lsplant/src/main/cpp/include/
+         ${HomePath}/external/nativeLib/src/main/cpp/includes/
 
-        ${HomePath}/Dobby/include/
-        ${HomePath}/nativeLib/src/main/cpp/hook/signhook/include/
+
+        ${HomePath}/external/lsplant/src/main/cpp/include/hook/signhook/include/
 )
 
 add_library(

@@ -4,7 +4,7 @@ aux_source_directory(. xdl_src_list)
 
 include_directories(
         ./
-        ${HomePath}/nativeLib/src/main/cpp/includes/
+         ${HomePath}/external/nativeLib/src/main/cpp/includes/
 )
 
 
